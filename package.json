@@ -1,0 +1,24 @@
+{
+  "name": "lockscope",
+  "version": "1.0.0",
+  "description": "Local-first npm advisory review",
+  "scripts": {
+    "test": "vitest run",
+    "build": "tsc && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "dev": "vite preview --host 0.0.0.0"
+  },
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.8",
+    "vitest": "5.1.1"
+  }
+}

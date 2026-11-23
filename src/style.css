@@ -1,0 +1,35 @@
+:root{font-family:system-ui,sans-serif;background:#10171a;color:#eef6f3;color-scheme:dark;line-height:1.55;--muted:#a5b8b5;--mint:#7ae0bf;--line:#304344}
+*{box-sizing:border-box}
+body{margin:0}
+.shell{max-width:1200px;margin:auto;padding:0 32px}
+header,footer{display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--line);min-height:76px;font-weight:700}
+.mark{color:var(--mint);font-size:26px}
+.header-label,footer span{margin-left:auto;color:var(--muted);font-size:.875rem}
+.header-label,.eyebrow{letter-spacing:.12em}
+.intro{padding:58px 0 34px}
+.eyebrow{color:var(--mint);font-size:.875rem;font-weight:700}
+h1{font-size:clamp(2.4rem,6vw,4.8rem);line-height:1.05;letter-spacing:-.055em;margin:12px 0 16px}
+.intro p{color:var(--muted);max-width:58ch;font-size:1.125rem}
+.workspace{display:grid;grid-template-columns:1fr 1fr;gap:18px;align-items:start}
+.panel{padding:24px;background:#182225;border:1px solid var(--line);border-radius:16px;min-width:0}
+h2,h3,p{margin:0 0 12px}
+h2{font-size:1.3rem}
+.muted{color:var(--muted)}
+.upload{position:relative;display:grid;justify-items:center;gap:6px;padding:24px 12px;margin:20px 0;border:1px dashed #648581;border-radius:10px;cursor:pointer;text-align:center}
+.upload:hover,.upload:focus-within{border-color:var(--mint);background:#213532}
+.upload input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}
+.upload-icon,.empty span{font-size:1.8rem;color:var(--mint)}
+.filename{max-width:100%;overflow-wrap:anywhere;font-weight:700}
+.privacy{padding:12px;background:#101a1c;border-radius:8px;color:var(--muted)}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+button{font:inherit;font-weight:700;padding:9px 14px;border:1px solid #57716e;border-radius:8px;background:transparent;color:inherit;cursor:pointer}
+button.primary{background:var(--mint);color:#10251e;border-color:var(--mint)}
+button:disabled{opacity:.5;cursor:default}
+button:focus-visible,a:focus-visible{outline:2px solid var(--mint);outline-offset:4px}
+.empty{min-height:240px;display:grid;place-content:center;text-align:center;color:var(--muted)}
+article{padding:14px 0;border-top:1px solid var(--line);overflow-wrap:anywhere}
+code{color:var(--mint);font-size:.875rem}
+a{color:var(--mint)}
+.error{margin-top:12px;color:#ffb7ab;overflow-wrap:anywhere}
+footer{margin-top:44px;border-bottom:0;border-top:1px solid var(--line)}
+@media(max-width:730px){.workspace{grid-template-columns:1fr}.shell{padding:0 16px}.intro{padding-top:36px}.panel{padding:18px}.header-label{letter-spacing:0}}
